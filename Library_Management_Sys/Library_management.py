@@ -251,7 +251,7 @@ def ForGetPass(event):
                     reciver = Emailval.get()
                     server = smtplib.SMTP('smtp.gmail.com',587)
                     server.starttls()
-                    server.login(sender,'Nitin@1906')
+                    server.login(sender,'[seander_PassWord]')
                     server.sendmail(sender,reciver,f'These Is Your XIE Library \n\n \tEmail ID : {Emailval.get()} \n\n \tOTP       : {Otp}')
                     server.quit()
 
